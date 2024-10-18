@@ -10,6 +10,8 @@ int main (int argc, char** argv){
   printf("Hello it is me\n");
   printf("%d\n", number(5));
 
+  printf("Oj"\n);
+
 
 
 
