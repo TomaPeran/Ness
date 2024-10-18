@@ -1,0 +1,43 @@
+Git branching FreeCodeCamp:
+(gittower -> git GUI)
+[] -> optional
+<> -> must have
+
+Creating branches is possible only in local repos, while creating branches in remote repo is possible only by publishing local repo to remote.
+
+git branch <branch-name> [revision-hash] 
+git checkout <branch-name> -> current head of branch on which you are working on
+git switch <branch-name> -> made exclusevly to switch branches
+git branch -m <branch-name> <new-branch-name> -> rename current branch
+git status -> gives status of a current branch
+git branch -> gives all branches
+
+## Executing these two commands give us "Renaming" of remote repo#
+git push origin --delete <branch-name> -> deleting current remote branch
+git push -u origin <local-branch-name> -> pushing new branch on remote repo
+
+git branch --track <local-name> <remote-branch-name> -> creating local branch that is based on remote branch
+git checkout --track <remote-branch-name> -> creating local branch that is based on remote branch
+
+git branch -v -> gives status on a remote repo (ahead==local commit that is not yet pushed, behind==there are new commits that are not pushed on my local repo)
+
+git branch -d <branch-name> -> delete local branch (can not delete branch on which you point)
+git push origin --delete <branch-name> -> delete remote repo
+
+
+## Merging branches
+1. Set to branch that should receive the changes:
+git switch <keeping-branch-name>
+2. Merge branch that contains the desired changes with one you are pointing on:
+git merge <merging-branch-name>
+
+
+##Rebasing
+1. Set to branch that should receive the changes:
+git switch <keeping-branch-name>
+2. Rebase branch that contains the desired changes with one you are pointing on:
+git rebase <rebasing-branch-name>
+
+Difference between merge and rebase is that when looking at development path merge has its branches and its knots where rebasing looks like one line.
+
+git log <branch-name>..<other-branch-name> -> shows difference between two branches, also can be done between local and remote file.
