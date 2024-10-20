@@ -17,7 +17,7 @@ As an Admin my job is to moderate behaviour of users on the app. So, first of al
 
 ## Database
 
-![alt text](https://github.com/OSS-Java-Seminar-2024/IT_Hive)
+![alt text](https://github.com/OSS-Java-Seminar-2024/IT_Hive/blob/main/IT_Hive_Database.jpeg)
 
 
 ## Authors
